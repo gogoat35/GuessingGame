@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+#quiz-container {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+}
