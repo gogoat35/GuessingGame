@@ -249,12 +249,7 @@ var allQuestions = [
         question: "Who painted 'The Girl with a Pearl Earring'?",
         options: ["Vermeer", "Rembrandt", "Van Gogh", "Monet"],
         correctAnswer: "Vermeer"
-ChatGPT
-The code you provided contains 50 questions. Each question is represented as an object with the properties question, options, and correctAnswer. This array of objects is essentially a quiz with 50 questions covering various topics.
-
-User
-can you add a question counter that shows what queston the person is on out of the number of questions? // JavaScript code for the quiz game
-var allQuestions = [
+    },
     {
         question: "What is the capital of France?",
         options: ["London", "Berlin", "Madrid", "Paris"],
