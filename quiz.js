@@ -1,5 +1,5 @@
 // JavaScript code for the quiz game
-var questions = [
+var allQuestions = [
     {
         question: "What is the capital of France?",
         options: ["London", "Berlin", "Madrid", "Paris"],
@@ -14,8 +14,26 @@ var questions = [
         question: "What is the largest mammal in the world?",
         options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
         correctAnswer: "Blue Whale"
-    }
+    },
+    // Add more questions here
+    // ...
 ];
+
+// Function to shuffle the questions array
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
+// Shuffle the questions array
+shuffleArray(allQuestions);
+
+// Select the first 20 questions for this session
+var questions = allQuestions.slice(0, 20);
 
 var currentQuestion = 0;
 var score = 0;
